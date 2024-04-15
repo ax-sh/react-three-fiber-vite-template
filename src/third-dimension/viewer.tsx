@@ -1,7 +1,7 @@
 import { OrbitControls, Sphere } from '@react-three/drei'
 
-import { ObjectMaterial } from '../third-dimension/object-material.tsx'
-import { Studio } from '../third-dimension/studio.tsx'
+import { ObjectMaterial } from './object-material.tsx'
+import { Studio } from './studio.tsx'
 
 function Lights() {
 	return (

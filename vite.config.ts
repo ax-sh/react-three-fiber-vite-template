@@ -1,3 +1,4 @@
+import * as fs from 'node:fs'
 import TurboConsole from 'unplugin-turbo-console/vite'
 import { defineConfig } from 'vite'
 import banner from 'vite-plugin-banner'
@@ -38,6 +39,18 @@ export default defineConfig({
 		react(),
 		Pages(),
 		removeConsole()
+		// {
+		// 	name: 'list-files-plugin',
+		// 	configResolved() {
+		// 		function listFilesInDirectory(directory) {
+		// 			const files = fs.readdirSync(directory)
+		// 			return files
+		// 		}
+		//
+		// 		const publicFiles = listFilesInDirectory('./public/textures/wood')
+		// 		console.log('Public files:', publicFiles)
+		// 	}
+		// }
 	],
 	server: {
 		host: true
