@@ -1,13 +1,13 @@
 import clsx from 'clsx'
 import * as THREE from 'three'
-import { OrbitControls as OrbitControlsImpl } from 'three-stdlib/controls/OrbitControls'
+import { OrbitControls as OrbitControlsImpl } from 'three-stdlib'
 
 import { Html, OrbitControls } from '@react-three/drei'
 import { Canvas, MeshProps, useFrame, useThree } from '@react-three/fiber'
 import React, { useRef, useState } from 'react'
 
 function Controls() {
-	const controls = useRef<OrbitControlsImpl>()
+	const controls = useRef<OrbitControlsImpl>(null!)
 	const { camera, gl } = useThree()
 	useFrame(() => controls.current.update())
 	return (
