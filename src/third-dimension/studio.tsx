@@ -10,7 +10,7 @@ export function Studio({ children, background }: PropsWithChildren<{ background?
 			{background && <color attach='background' args={[background]} />}
 			<React.Suspense
 				fallback={
-					<Html className={'bg-white'}>
+					<Html className={'text-white'}>
 						<Loader />
 					</Html>
 				}
