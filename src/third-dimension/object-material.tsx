@@ -20,7 +20,7 @@ export function ObjectMaterial() {
 		<meshPhysicalMaterial
 			attach='material'
 			map={texture.color}
-			// displacementMap={texture.displacement}
+			displacementMap={texture.displacement}
 			roughnessMap={texture.roughness}
 		/>
 	)
