@@ -6,7 +6,7 @@ import Loader from '../ui/Loader.tsx'
 
 export function Studio({ children, background }: PropsWithChildren<{ background?: string }>) {
 	return (
-		<Canvas className={'h-full w-full' + ''}>
+		<Canvas gl={{ antialias: true }} className={'h-full w-full' + ''}>
 			{background && <color attach='background' args={[background]} />}
 			<React.Suspense
 				fallback={
