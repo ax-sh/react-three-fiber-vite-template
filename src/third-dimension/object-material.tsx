@@ -7,6 +7,7 @@ export function ObjectMaterial() {
 		roughness: { value: 5, min: 0, max: 10, step: 0.1 },
 		displacement: { value: 0, min: 0, max: 2, step: 0.1 }
 	})
+	// @see https://3dtextures.me/2022/09/15/wood-herringbone-tiles-004/
 	const color = 'textures/wood/Substance_Graph_BaseColor.jpg'
 	const normal = 'textures/wood/Substance_Graph_Normal.jpg'
 	const roughness = 'textures/wood/Substance_Graph_Roughness.jpg'
