@@ -1,11 +1,22 @@
+import { Html } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React, { PropsWithChildren } from 'react'
+
+import Loader from '../ui/Loader.tsx'
 
 export function Studio({ children, background }: PropsWithChildren<{ background?: string }>) {
 	return (
 		<Canvas className={'h-full w-full' + ''}>
 			{background && <color attach='background' args={[background]} />}
-			<React.Suspense fallback={null}>{children}</React.Suspense>
+			<React.Suspense
+				fallback={
+					<Html className={'bg-white'}>
+						<Loader />
+					</Html>
+				}
+			>
+				{children}
+			</React.Suspense>
 		</Canvas>
 	)
 }
