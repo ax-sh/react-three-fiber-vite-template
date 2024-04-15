@@ -1,10 +1,11 @@
 // replace with the name of your tailwind css file
 import { withThemeByClassName } from '@storybook/addon-themes'
-import { initialize, mswLoader } from 'msw-storybook-addon'
 
 import type { Preview } from '@storybook/react'
 
 import '../src/global.css'
+
+import { initialize, mswLoader } from 'msw-storybook-addon'
 
 // Initialize MSW
 initialize()

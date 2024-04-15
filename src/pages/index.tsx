@@ -1,11 +1,12 @@
 import clsx from 'clsx'
 
+import { Viewer } from './viewer.tsx'
+
 export default function IndexPage() {
+	// console.log(import.meta, 2222)
 	return (
-		<main>
-			<section className={clsx('bg-green-300 h-dvh', 'grid place-content-center')}>
-				<div className={'text-9xl'}>HELLO</div>
-			</section>
+		<main className={clsx('bg-black h-dvh')}>
+			<Viewer />
 		</main>
 	)
 }
