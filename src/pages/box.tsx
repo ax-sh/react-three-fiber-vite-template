@@ -1,5 +1,3 @@
-import clsx from 'clsx'
-
 import { Canvas } from '@react-three/fiber'
 import React from 'react'
 
@@ -17,7 +15,7 @@ const ThirdDimention = () => {
 }
 export default function IndexPage() {
 	return (
-		<main className={clsx('bg-black h-dvh')}>
+		<main className={'bg-black h-dvh'}>
 			<ThirdDimention />
 		</main>
 	)

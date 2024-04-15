@@ -4,7 +4,7 @@ import { Html } from '@react-three/drei'
 import { Canvas, extend, useFrame, useThree } from '@react-three/fiber'
 import React, { ComponentProps, useRef, useState } from 'react'
 
-import { Controls } from './controls.tsx'
+import { Controls } from '../third-dimension/controls.tsx'
 
 const M = () => {
 	return (
@@ -101,9 +101,9 @@ const CubeWithHotSpot = () => {
 	)
 }
 
-const ThirdDimention = () => {
+export default function IndexPage() {
 	return (
-		<>
+		<main className={'bg-black h-dvh'}>
 			<Canvas gl={{ antialias: true }}>
 				<ambientLight />
 				<pointLight position={[10, 10, 10]} />
@@ -111,13 +111,6 @@ const ThirdDimention = () => {
 				<CubeWithHotSpot />
 				<Controls />
 			</Canvas>
-		</>
-	)
-}
-export default function IndexPage() {
-	return (
-		<main className={'bg-black h-dvh'}>
-			<ThirdDimention />
 		</main>
 	)
 }

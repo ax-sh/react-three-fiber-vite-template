@@ -1,10 +1,8 @@
-import clsx from 'clsx'
-
 import { Html } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React from 'react'
 
-import { Controls } from './controls.tsx'
+import { Controls } from '../third-dimension/controls.tsx'
 
 const M = () => {
 	return (
@@ -47,7 +45,7 @@ const ThirdDimention = () => {
 
 export default function OverlapCubePage() {
 	return (
-		<main className={clsx('bg-black h-dvh')}>
+		<main className={'bg-black h-dvh'}>
 			<ThirdDimention />
 		</main>
 	)
