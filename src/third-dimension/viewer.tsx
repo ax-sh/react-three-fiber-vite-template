@@ -1,4 +1,4 @@
-import { Bounds, OrbitControls, Sphere, SpotLight, useDepthBuffer } from '@react-three/drei'
+import { Bounds, Environment, OrbitControls, Sphere, SpotLight, useDepthBuffer } from '@react-three/drei'
 
 import { ObjectMaterial } from './object-material.tsx'
 import { Studio } from './studio.tsx'
@@ -30,6 +30,7 @@ function Scene() {
 	return (
 		<group>
 			<Lights />
+			<Environment preset={'city'}></Environment>
 			<Bounds fit>
 				<Sphere args={[1, segments, segments]}>
 					<ObjectMaterial />

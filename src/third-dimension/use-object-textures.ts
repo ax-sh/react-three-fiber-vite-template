@@ -5,6 +5,7 @@ export type ObjectTextures = {
 	normal: string
 	roughness: string
 	displacement: string
+	ambientOcclusion: string
 }
 export function useObjectTextures(textures: ObjectTextures) {
 	return useTexture(textures)
